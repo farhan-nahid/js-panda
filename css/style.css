@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Georama:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georama", sans-serif;
+}
+
+:root {
+  --section-bg: #feeae9;
+  --dark-color: #1f1f1f;
+  --white-color: #ffffff;
+  --primary-color: #ff136f;
+  --yellow-bg: linear-gradient(152.07deg, #ff9c35 1.47%, #ffd019 97.17%);
+  --pink-bg: linear-gradient(180deg, #ff589b -0.01%, #ff136f 99.99%);
+  --blue-bg: linear-gradient(170.41deg, #4289ff -10.89%, #3f07f8 92.77%);
+}
+
+#slider {
+  background-color: var(--section-bg);
+  border-radius: 20px;
+}
+
+#slider img {
+  height: 450px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.section__heading {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 84px;
+  color: var(--dark-color);
+}
+
+.primary__color {
+  color: var(--primary-color);
+}
+
+.price {
+  font-size: 41px;
+  line-height: 62px;
+  font-weight: 500;
+}
+
+.main__button {
+  background: var(--pink-bg);
+  padding: 10px 30px;
+  border: 0;
+  outline: 0;
+  color: var(--white-color);
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.submit__button {
+  background: var(--pink-bg);
+  padding: 20px 30px;
+  border: 0;
+  outline: 0;
+  color: var(--white-color);
+  font-weight: 600;
+}
+
+.watches {
+  border-radius: 20px;
+  background-image: var(--yellow-bg);
+}
+
+.bags {
+  border-radius: 20px;
+  background-image: var(--pink-bg);
+}
+
+.shoes {
+  border-radius: 20px;
+  background-image: var(--blue-bg);
+}
+
+#category h3 {
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: 500;
+  color: var(--white-color);
+}
+
+.watches img,
+.bags img,
+.shoes img {
+  width: 90px;
+  height: 107px;
+  object-fit: cover;
+}
+
+#shoes img,
+#bags img {
+  height: 300px;
+  object-fit: contain;
+}
+
+#contact__us {
+  background-color: var(--section-bg);
+  border-radius: 20px;
+}
+
+#contact__us input {
+  padding: 20px 30px;
+  width: 500px;
+  border: 0;
+  outline: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #contact__us input {
+    width: 250px;
+  }
+  .submit__button {
+    padding: 20px 10px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #contact__us input {
+    width: 200px;
+  }
+}
