@@ -18,9 +18,9 @@ function handleHide() {
 }
 */
 
-function handleHide() {
-  document.getElementById("shoe2").style.display = "none";
-}
+// function handleHide() {
+//   document.getElementById("shoe2").style.display = "none";
+// }
 
 const input = document.getElementById("email");
 input.addEventListener("keyup", function () {
@@ -32,10 +32,14 @@ input.addEventListener("keyup", function () {
   }
 });
 
-const shoes = document.getElementById("shoe1");
-shoes.addEventListener("mouseenter", function () {
-  shoes.src = "../images/category-shoe.png";
-});
+const shoes = document.getElementsByClassName("card-img-top");
+for (const singleShoe of shoes) {
+  singleShoe.addEventListener("mouseenter", function () {
+    singleShoe.src = "../images/cool.png";
+    singleShoe.style.backgroundColor = "lightGray";
+    singleShoe.style.borderRadius = "30px";
+  });
+}
 
 function dblClick() {
   document.getElementById("contact__us").style.backgroundColor = "lightblue";
