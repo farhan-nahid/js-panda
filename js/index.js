@@ -9,18 +9,11 @@ const cards = document.getElementsByClassName("card");
 for (const card of cards) {
   card.style.borderRadius = "30px";
 }
-/*
-function handleHide() {
-  const allButton = document.getElementsByClassName("main__button");
-  for (const button of allButton) {
-    button.style.display = "none";
-  }
-}
-*/
 
-// function handleHide() {
-//   document.getElementById("shoe2").style.display = "none";
-// }
+function handleHide(event) {
+  const hidingTheButton = event.target;
+  hidingTheButton.style.visibility = "hidden";
+}
 
 const input = document.getElementById("email");
 input.addEventListener("keyup", function () {
