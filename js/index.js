@@ -25,12 +25,12 @@ input.addEventListener("keyup", function () {
   }
 });
 
-const shoes = document.getElementsByClassName("card-img-top");
-for (const singleShoe of shoes) {
-  singleShoe.addEventListener("mouseenter", function () {
-    singleShoe.src = "../images/cool.png";
-    singleShoe.style.backgroundColor = "lightGray";
-    singleShoe.style.borderRadius = "30px";
+const cardImage = document.getElementsByClassName("card-img-top");
+for (const singleImage of cardImage) {
+  singleImage.addEventListener("mouseenter", function () {
+    singleImage.src = "../images/cool.png";
+    singleImage.style.backgroundColor = "lightGray";
+    singleImage.style.borderRadius = "30px";
   });
 }
 
