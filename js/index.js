@@ -10,9 +10,21 @@ for (const card of cards) {
   card.style.borderRadius = "30px";
 }
 
-function handleHide(event) {
-  const hidingTheButton = event.target;
-  hidingTheButton.style.visibility = "hidden";
+const btn = document.getElementsByClassName("btn");
+for (const b of btn) {
+  b.addEventListener("click", (e) => {
+    const hidingTheButton = e.target;
+    hidingTheButton.style.visibility = "hidden";
+    const card = e.target.parentNode.parentNode;
+    const p = card.getElementsByTagName("p")[1];
+    p.style.textAlign = "center";
+    if (p.innerText === "") {
+      p.innerText = "Buy Complete";
+    } else {
+      return false;
+    }
+    card.appendChild(p);
+  });
 }
 
 const input = document.getElementById("email");
